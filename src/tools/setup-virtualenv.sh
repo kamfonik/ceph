@@ -22,6 +22,8 @@ virtualenv --python python2.7 $DIR
 . $DIR/bin/activate
 # older versions of pip will not install wrap_console scripts
 # when using wheel packages
+pip --versoin 1>&2
+pip --help 1>&2
 pip --log $DIR/log.txt install --upgrade 'pip >= 6.1'
 if test -d wheelhouse ; then
     export NO_INDEX=--no-index
