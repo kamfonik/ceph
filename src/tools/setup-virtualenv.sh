@@ -25,6 +25,8 @@ virtualenv --python python2.7 $DIR
 pip --versoin 1>&2
 pip --help 1>&2
 pip --log $DIR/log.txt install --upgrade 'pip >= 6.1'
+pip --versoin 1>&2
+pip --help 1>&2
 if test -d wheelhouse ; then
     export NO_INDEX=--no-index
 fi
